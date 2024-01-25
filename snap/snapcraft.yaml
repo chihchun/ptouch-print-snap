@@ -1,6 +1,7 @@
 name: ptouch-print # you probably want to 'snapcraft register <name>'
 base: core22 # the base snap is the execution environment for this snap
 version: '1.5' # just for humans, typically '1.2+git' or '1.3.2'
+license: GPL-3.0
 summary: cli to print labels on Brother P-Touch
 description: |
   ptouch-print is a command line tool to print labels on Brother P-Touch
