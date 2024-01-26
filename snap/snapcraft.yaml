@@ -47,6 +47,7 @@ apps:
       - raw-usb
       - network-control
       - home
+      - log-observe
 
 parts:
   ptouch-print:
