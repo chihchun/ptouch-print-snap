@@ -30,16 +30,6 @@ grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 website: https://git.familie-radermacher.ch/linux/ptouch-print.git/tree/
 
-layout:
-  /etc/fonts:
-    bind: $SNAP/etc/fonts
-  /usr/share/fonts:
-    bind: $SNAP/usr/share/fonts
-  /usr/local/share/fonts:
-    bind: $SNAP/usr/local/share/fonts
-  /var/cache/fontconfig:
-    bind: $SNAP_DATA/var/cache/fontconfig
-
 apps:
   ptouch-print:
     command: /usr/bin/ptouch-print
@@ -48,6 +38,7 @@ apps:
       - network-control
       - home
       - log-observe
+      - desktop
 
 parts:
   ptouch-print:
@@ -62,3 +53,4 @@ parts:
     stage-packages:
       - libgd3
       - libusb-1.0-0
+      - fontconfig
