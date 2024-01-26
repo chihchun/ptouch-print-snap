@@ -46,6 +46,7 @@ apps:
     plugs: 
       - raw-usb
       - network-control
+      - home
 
 parts:
   ptouch-print:
