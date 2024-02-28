@@ -32,7 +32,7 @@ website: https://git.familie-radermacher.ch/linux/ptouch-print.git/tree/
 
 apps:
   ptouch-print:
-    command: /usr/bin/ptouch-print
+    command: usr/bin/ptouch-print
     plugs: 
       - raw-usb
       - network-control
